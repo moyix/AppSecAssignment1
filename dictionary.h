@@ -28,7 +28,7 @@ node;
 typedef node* hashmap_t;
 
 /**
- * Returns true if all words are spelled correctly, false otherwise. Array misspelled is populated with words that are misspelled.
+ * Array misspelled is populated with words that are misspelled. Returns the length of misspelled.
  */
 int check_words(FILE* fp, hashmap_t hashtable[], char * misspelled[]);
 
