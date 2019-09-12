@@ -87,4 +87,9 @@ bool check_word(const char* word, hashmap_t hashtable[]);
  **/
 bool load_dictionary(const char* dictionary_file, hashmap_t hashtable[]);
 
+/**
+ * Already implemented in dictionary.c
+ **/
+int hash_function(const char* word);
+
 #endif // DICTIONARY_H

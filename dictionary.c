@@ -16,8 +16,6 @@
 // Hash table is an array of linked lists.
 node* hashtable[HASH_SIZE];
 
-int hash_function(const char* word);
-
 // Maps a word to an integer value to place it in the hash table.
 // Sum the value of each character in the word, then find the 
 // remainder after dividing by the size of the hash table.
