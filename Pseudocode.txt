@@ -1,6 +1,5 @@
 fuction check_word(string word, hashmap hashtable[])
 {
-    Remove punctuation from beginning and end of word.
     Set int bucket to the output of hash_function(word).
     Set hashmap_t cursor equal to hashmap[bucket].
     While cursor is not NULL:
@@ -38,6 +37,7 @@ function check_words(file fp, hashmap hashtable[], string misspelled[])
         Read the line.
         Split the line on spaces.
         For each word in line:
+            Remove punctuation from beginning and end of word.
             If not check_word(word):
                 Append word to misspelled.
                 Increment num_misspelled.
