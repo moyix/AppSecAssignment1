@@ -5,7 +5,11 @@ fuction check_word(string word, hashmap hashtable[])
     While cursor is not NULL:
         If word equals cursor->word:
             return True.
-        Else if lower_case(word) equals curosr->word:
+        Set curosr to cursor->next.
+    Set int bucket to the output of hash_function(word).
+    Set hashmap_t cursor equal to hashmap[bucket].
+    While cursor is  not NULL:
+        If lower_case(word) equals curosr->word:
             return True.
         Set curosr to cursor->next.
     return False.
